@@ -1,0 +1,25 @@
+unit uDMStyle;
+
+interface
+
+uses
+  System.SysUtils, System.Classes;
+
+type
+  TDMStyle = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DMStyle: TDMStyle;
+
+implementation
+
+{%CLASSGROUP 'FMX.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

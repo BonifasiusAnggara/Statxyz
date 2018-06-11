@@ -1,0 +1,30 @@
+inherited fMain_LgXhdpiPh: TfMain_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    inherited btnClose: TButton
+      Position.X = 402.000000000000000000
+    end
+    inherited Label1: TLabel
+      Size.Width = 354.000000000000000000
+    end
+  end
+  inherited ListBox1: TListBox
+    Size.Width = 450.000000000000000000
+    Size.Height = 647.000000000000000000
+    Viewport.Width = 446.000000000000000000
+    Viewport.Height = 643.000000000000000000
+    inherited ListBoxGroupHeader1: TListBoxGroupHeader
+      Size.Width = 446.000000000000000000
+    end
+    inherited ListBoxGroupHeader2: TListBoxGroupHeader
+      Size.Width = 446.000000000000000000
+    end
+  end
+  inherited Memo1: TMemo
+    Viewport.Width = 640.000000000000000000
+    Viewport.Height = 432.000000000000000000
+  end
+end

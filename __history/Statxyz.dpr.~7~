@@ -1,0 +1,20 @@
+program Statxyz;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  uMain in 'uMain.pas' {fMain},
+  uDistribusiBinomial in 'uDistribusiBinomial.pas' {fBinom},
+  uDistribusiFrekuensi in 'uDistribusiFrekuensi.pas' {fDF},
+  uRegresiLinearSederhana in 'uRegresiLinearSederhana.pas' {fRLS};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfMain, fMain);
+  Application.CreateForm(TfBinom, fBinom);
+  Application.CreateForm(TfDF, fDF);
+  Application.CreateForm(TfRLS, fRLS);
+  Application.Run;
+end.

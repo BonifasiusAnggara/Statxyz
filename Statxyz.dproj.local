@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/12/29 20:34:47.000.852,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/12/29 20:40:26.000.546,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\uMain.fmx=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2017/12/29 20:40:26.000.546,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\uMain.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/12/29 20:40:32.000.810,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Statxyz.dproj=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/12/29 20:41:19.000.908,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/12/29 20:43:35.000.413,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\uDistribusiBinomial.fmx=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2017/12/29 20:43:35.000.413,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\uDistribusiBinomial.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/12/29 21:12:17.000.066,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
+    <Transaction>2017/12/29 21:12:43.000.681,D:\Skripsi\Statxyz\Unit1.pas=D:\Skripsi\Statxyz\uDistribusiFrekuensi.pas</Transaction>
+    <Transaction>2017/12/29 21:12:43.000.681,D:\Skripsi\Statxyz\Unit1.fmx=D:\Skripsi\Statxyz\uDistribusiFrekuensi.fmx</Transaction>
+    <Transaction>2017/12/29 21:34:24.000.344,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
+    <Transaction>2017/12/29 21:34:36.000.255,D:\Skripsi\Statxyz\Unit1.fmx=D:\Skripsi\Statxyz\uRegresiLinearBerganda.fmx</Transaction>
+    <Transaction>2017/12/29 21:34:36.000.255,D:\Skripsi\Statxyz\Unit1.pas=D:\Skripsi\Statxyz\uRegresiLinearBerganda.pas</Transaction>
+    <Transaction>2017/12/29 21:47:15.000.029,D:\Skripsi\Statxyz\uRegresiLinearBerganda.pas=</Transaction>
+    <Transaction>2017/12/29 21:47:26.000.583,=D:\Skripsi\Statxyz\uRegresiLinearBerganda.pas</Transaction>
+    <Transaction>2017/12/29 21:51:17.000.486,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
+    <Transaction>2017/12/29 21:52:13.000.014,D:\Skripsi\Statxyz\uRegresiLinearSederhana.fmx=D:\Skripsi\Statxyz\Unit1.fmx</Transaction>
+    <Transaction>2017/12/29 21:52:13.000.014,D:\Skripsi\Statxyz\uRegresiLinearSederhana.pas=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
+    <Transaction>2017/12/29 22:21:26.000.845,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
+    <Transaction>2017/12/29 22:21:41.000.230,D:\Skripsi\Statxyz\uRegresiLinearBerganda.fmx=D:\Skripsi\Statxyz\Unit1.fmx</Transaction>
+    <Transaction>2017/12/29 22:21:41.000.230,D:\Skripsi\Statxyz\uRegresiLinearBerganda.pas=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
+    <Transaction>2017/12/29 23:10:08.000.207,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
+    <Transaction>2017/12/29 23:10:26.000.220,D:\Skripsi\Statxyz\Unit1.pas=D:\Skripsi\Statxyz\uRegresiLinear3X.pas</Transaction>
+    <Transaction>2017/12/29 23:10:26.000.220,D:\Skripsi\Statxyz\Unit1.fmx=D:\Skripsi\Statxyz\uRegresiLinear3X.fmx</Transaction>
+    <Transaction>2018/02/22 00:48:01.000.620,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
+    <Transaction>2018/02/22 00:48:08.000.746,D:\Skripsi\Statxyz\Unit1.dfm=D:\Skripsi\Statxyz\uDMStyle.dfm</Transaction>
+    <Transaction>2018/02/22 00:48:08.000.746,D:\Skripsi\Statxyz\Unit1.pas=D:\Skripsi\Statxyz\uDMStyle.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="OZLNHU4T9PDACECE"/>
+	</ActiveMobileDevice>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="android-support-v4.dex.jar"/>
+    <File Path="cloud-messaging.dex.jar"/>
+    <File Path="fmx.dex.jar"/>
+    <File Path="google-analytics-v2.dex.jar"/>
+    <File Path="google-play-billing.dex.jar"/>
+    <File Path="google-play-licensing.dex.jar"/>
+    <File Path="google-play-services.dex.jar"/>
+    <File Path="uDistribusiBinomial.pas"/>
+    <File Path="uDistribusiBinomial.fmx"/>
+    <File Path="uDistribusiFrekuensi.pas"/>
+    <File Path="uDistribusiFrekuensi.fmx"/>
+    <File Path="uMain.pas"/>
+    <File Path="uMain.fmx"/>
+    <File Path="uRegresiLinear3X.pas"/>
+    <File Path="uRegresiLinear3X.fmx"/>
+    <File Path="uRegresiLinearBerganda.pas"/>
+    <File Path="uRegresiLinearBerganda.fmx"/>
+    <File Path="uRegresiLinearSederhana.pas"/>
+    <File Path="uRegresiLinearSederhana.fmx"/>
+    <File Path="uDMStyle.pas"/>
+    <File Path="uDMStyle.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
