@@ -1,0 +1,2 @@
+# Statxyz
+Skripsi, Aplikasi Statistika
