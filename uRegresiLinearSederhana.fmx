@@ -36,8 +36,8 @@ object fRLS: TfRLS
     Size.PlatformDefault = False
     TabOrder = 3
     Visible = False
-    Viewport.Width = 634.000000000000000000
-    Viewport.Height = 426.000000000000000000
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 428.000000000000000000
   end
   object ToolBar1: TToolBar
     Size.Width = 640.000000000000000000
@@ -215,7 +215,7 @@ object fRLS: TfRLS
           FileName = 'E:\Skripsi\Statxyz\database_table-512.png'
         end>
       IsSelected = True
-      Size.Width = 99.000000000000000000
+      Size.Width = 246.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'tabitemcustom'
@@ -326,8 +326,9 @@ object fRLS: TfRLS
               object ClearEditButton1: TClearEditButton
                 CanFocus = False
                 Cursor = crArrow
+                Position.Y = 4.000000000000000000
                 Size.Width = 32.000000000000000000
-                Size.Height = 40.000000000000000000
+                Size.Height = 30.000000000000000000
                 Size.PlatformDefault = False
                 TabOrder = 0
               end
@@ -356,8 +357,9 @@ object fRLS: TfRLS
               object ClearEditButton2: TClearEditButton
                 CanFocus = False
                 Cursor = crArrow
+                Position.Y = 4.000000000000000000
                 Size.Width = 32.000000000000000000
-                Size.Height = 40.000000000000000000
+                Size.Height = 30.000000000000000000
                 Size.PlatformDefault = False
                 TabOrder = 0
               end
@@ -746,7 +748,7 @@ object fRLS: TfRLS
           FileName = 'E:\Skripsi\Statxyz\note-2.png'
         end>
       IsSelected = False
-      Size.Width = 146.000000000000000000
+      Size.Width = 402.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'tabitemcustom'
@@ -785,8 +787,9 @@ object fRLS: TfRLS
           object ClearEditButton4: TClearEditButton
             CanFocus = False
             Cursor = crArrow
+            Position.Y = 6.000000000000000000
             Size.Width = 32.000000000000000000
-            Size.Height = 44.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
           end
@@ -4177,7 +4180,7 @@ object fRLS: TfRLS
             'velopment_increase-2-512.png'
         end>
       IsSelected = False
-      Size.Width = 113.000000000000000000
+      Size.Width = 300.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'tabitemcustom'

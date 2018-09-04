@@ -300,7 +300,7 @@ var estX, estY : Double;
 begin
   if Trim(EditForX.Text) = '' then
   begin
-    ShowMessage('X₁ tidak boleh kosong');
+    ShowMessage('X tidak boleh kosong');
     EditX.SetFocus;
     Exit;
   end;
@@ -311,14 +311,11 @@ begin
 end;
 
 procedure TfRLS.btnResetClick(Sender: TObject);
+var i : integer;
 begin
   //Menghapus TStringGrid
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
+  for i := 0 to 5 do
+    StringGrid1.Columns[0].DisposeOf;
 
   //Menghapus ListBox
   LabelEquation.Text:= '';

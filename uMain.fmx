@@ -11,7 +11,7 @@ object fMain: TfMain
   DesignerMasterStyle = 3
   object ToolBar1: TToolBar
     Size.Width = 640.000000000000000000
-    Size.Height = 46.000000000000000000
+    Size.Height = 48.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object btnInfo: TButton
@@ -38,7 +38,7 @@ object fMain: TfMain
     object Label1: TLabel
       Align = Client
       Size.Width = 544.000000000000000000
-      Size.Height = 46.000000000000000000
+      Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
       TextSettings.HorzAlign = Center
       Text = 'fStat/Statxyz'
@@ -47,79 +47,71 @@ object fMain: TfMain
   object ListBox1: TListBox
     Align = Client
     Size.Width = 640.000000000000000000
-    Size.Height = 434.000000000000000000
+    Size.Height = 432.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     DisableFocusEffect = True
     DefaultItemStyles.ItemStyle = ''
     DefaultItemStyles.GroupHeaderStyle = ''
     DefaultItemStyles.GroupFooterStyle = ''
-    Viewport.Width = 620.000000000000000000
-    Viewport.Height = 430.000000000000000000
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 428.000000000000000000
     object ListBoxGroupHeader1: TListBoxGroupHeader
-      Size.Width = 620.000000000000000000
-      Size.Height = 22.000000000000000000
+      Size.Width = 636.000000000000000000
+      Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 4
       Text = 'Statistika Inferensial dan Deskriptif'
     end
     object DistribusiFrekuensi: TListBoxItem
-      Position.Y = 22.000000000000000000
+      Position.Y = 30.000000000000000000
       TabOrder = 0
       Text = 'Distribusi Frekuensi'
       OnClick = DistribusiFrekuensiClick
     end
     object RegresiLinearSederhana: TListBoxItem
-      Position.Y = 66.000000000000000000
+      Position.Y = 74.000000000000000000
       TabOrder = 1
       Text = 'Regresi Linear Sederhana'
       OnClick = RegresiLinearSederhanaClick
     end
     object RegresiLinearBerganda: TListBoxItem
-      Position.Y = 110.000000000000000000
+      Position.Y = 118.000000000000000000
       TabOrder = 2
       Text = 'Regresi Linear Berganda'
       OnClick = RegresiLinearBergandaClick
     end
     object RegresiLinear3: TListBoxItem
-      Position.Y = 154.000000000000000000
+      Position.Y = 162.000000000000000000
       TabOrder = 3
       Text = 'Regresi Linear 3 Variable X'
       OnClick = RegresiLinear3Click
     end
     object TrendParabola: TListBoxItem
-      Position.Y = 198.000000000000000000
-      TabOrder = 9
+      Position.Y = 206.000000000000000000
+      TabOrder = 7
       Text = 'Trend Parabola'
+      OnClick = TrendParabolaClick
     end
     object TrendEksponensial: TListBoxItem
-      Position.Y = 242.000000000000000000
-      TabOrder = 10
+      Position.Y = 250.000000000000000000
+      TabOrder = 8
       Text = 'Trend Eksponensial'
+      OnClick = TrendEksponensialClick
     end
     object ListBoxGroupHeader2: TListBoxGroupHeader
-      Position.Y = 286.000000000000000000
-      Size.Width = 620.000000000000000000
-      Size.Height = 22.000000000000000000
+      Position.Y = 294.000000000000000000
+      Size.Width = 636.000000000000000000
+      Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
       Text = 'Distribusi Probabilitas'
     end
     object DistribusiBinomial: TListBoxItem
-      Position.Y = 308.000000000000000000
+      Position.Y = 324.000000000000000000
       TabOrder = 6
       Text = 'Distribusi Binomial'
       OnClick = DistribusiBinomialClick
-    end
-    object DistribusiPoisson: TListBoxItem
-      Position.Y = 352.000000000000000000
-      TabOrder = 7
-      Text = 'Distribusi Poisson'
-    end
-    object DistribusiBayes: TListBoxItem
-      Position.Y = 396.000000000000000000
-      TabOrder = 8
-      Text = 'Distribusi Bayes'
     end
   end
   object Memo1: TMemo

@@ -1,0 +1,244 @@
+﻿unit uTrendEksponensial;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, System.Rtti,
+  FMX.Grid.Style, FMX.Memo, FMXTee.Series, FMXTee.Engine, FMXTee.Procs,
+  FMXTee.Chart, FMX.Edit, FMX.ListBox, FMX.Layouts, FMX.StdCtrls, FMX.ScrollBox,
+  FMX.Grid, FMX.TabControl, FMX.Controls.Presentation, Math;
+
+type
+  TfTEks = class(TForm)
+    ToolBar1: TToolBar;
+    Label1: TLabel;
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    StringGrid1: TStringGrid;
+    ToolBar2: TToolBar;
+    EditSetN: TEdit;
+    btnAnalyze: TButton;
+    btnSetN: TButton;
+    btnReset: TButton;
+    Panel1: TPanel;
+    ListBox2: TListBox;
+    ListBoxItem14: TListBoxItem;
+    Label2: TLabel;
+    EditY: TEdit;
+    ClearEditButton1: TClearEditButton;
+    ListBoxItem15: TListBoxItem;
+    Label3: TLabel;
+    EditX: TEdit;
+    ClearEditButton2: TClearEditButton;
+    TabItem2: TTabItem;
+    ToolBar4: TToolBar;
+    LabelEquation: TLabel;
+    ToolBar5: TToolBar;
+    EditForX: TEdit;
+    ClearEditButton4: TClearEditButton;
+    Label5: TLabel;
+    Label7: TLabel;
+    EditForY: TEdit;
+    ToolBar6: TToolBar;
+    btnForecast: TButton;
+    ListBox1: TListBox;
+    ListBoxItem1: TListBoxItem;
+    ListBoxItem2: TListBoxItem;
+    ListBoxItem3: TListBoxItem;
+    TabItem3: TTabItem;
+    Chart1: TChart;
+    Series1: TPointSeries;
+    Series3: TLineSeries;
+    Memo1: TMemo;
+    btnInfo: TButton;
+    btnClose: TButton;
+    procedure btnCloseClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure btnInfoClick(Sender: TObject);
+    procedure btnSetNClick(Sender: TObject);
+    procedure btnAnalyzeClick(Sender: TObject);
+  private
+    { Private declarations }
+    N : Integer;
+    X     : array of Double;
+    Y     : array of Double;
+    Xo    : array of Double;
+    Yo    : array of Double;
+    Xo2 : array of Double;
+    XoYo : array of Double;
+    Ycap  : array of Double;
+    Ycaps  : array of Double;
+    SigmaX,SigmaY,SigmaXo,SigmaYo,SigmaXoYo,SigmaXo2: Double;
+    a, b : Double;
+    procedure Split(const Delimiter: Char; Input: string; const Strings: TStrings);
+  public
+    { Public declarations }
+  end;
+
+var
+  fTEks: TfTEks;
+
+implementation
+
+{$R *.fmx}
+
+uses uDMStyle;
+
+procedure TfTEks.btnCloseClick(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TfTEks.btnInfoClick(Sender: TObject);
+begin
+  Memo1.Visible := not Memo1.Visible;
+end;
+
+procedure TfTEks.FormCreate(Sender: TObject);
+begin
+  EditSetN.SetFocus;
+end;
+
+procedure TfTEks.btnSetNClick(Sender: TObject);
+begin
+  if Trim(EditSetN.Text) = '' then
+  begin
+    ShowMessage('Field ini tidak boleh kosong');
+    EditSetN.SetFocus;
+    Exit;
+  end;
+
+  Try
+    N := StrToInt(EditSetN.Text);
+  except
+  on EConvertError do
+    begin
+      ShowMessage('Data yang anda masukkan bukan angka');
+      EditSetN.SetFocus;
+      Exit;
+    end;
+  End;
+
+  N := StrToInt(EditSetN.Text);
+
+  EditSetN.Enabled  := False;
+  btnSetN.Enabled   := False;
+  Panel1.Visible  := True;
+  btnAnalyze.Enabled := True;
+  EditY.SetFocus;
+end;
+
+// procedure untuk split string
+procedure TfTEks.Split(const Delimiter: Char; Input: string; const Strings: TStrings);
+begin
+  Assert(Assigned(Strings)) ;
+  Strings.Clear;
+  Strings.Delimiter := Delimiter;
+  Strings.DelimitedText := Input;
+end;
+
+procedure TfTEks.btnAnalyzeClick(Sender: TObject);
+  var i : Integer; InputY, InputX : TStringList;
+begin
+  //Memastikan TEdit tidak kosong
+  if Trim(EditY.Text) = '' then
+    ShowMessage('Field ini tidak boleh kosong');
+
+  if Trim(EditX.Text) = '' then
+    ShowMessage('Field ini tidak boleh kosong');
+
+  //Membuat Column
+  for i := 0 to 6 do
+    StringGrid1.AddObject(TStringColumn.Create(Self));
+
+  //Memberi Teks Header
+  StringGrid1.RowCount := N+1;
+  StringGrid1.Columns[0].Header := '#';
+  StringGrid1.Columns[1].Header := 'Y';
+  StringGrid1.Columns[2].Header := 'X';
+  StringGrid1.Columns[3].Header := 'Y₀';
+  StringGrid1.Columns[4].Header := 'X₀';
+  StringGrid1.Columns[5].Header := 'X₀²';
+  StringGrid1.Columns[6].Header := 'X₀.Y₀';
+
+  //Memasukkan dan memecah inputan TEdit menjadi Array
+  InputY  := TStringList.Create;
+  InputX := TStringList.Create;
+  Split(' ',EditY.Text,InputY);
+  Split(' ',EditX.Text,InputX);
+
+  //Menentukan Length Array sesuai N
+  SetLength(X,N);
+  SetLength(Y,N);
+  SetLength(Xo,N);
+  SetLength(Yo,N);
+  SetLength(Xo2,N);
+  SetLength(XoYo,N);
+  SetLength(Ycap,N);
+  SetLength(Ycaps,N);
+
+  for i := 0 to N-1 do
+    begin
+      //Memasukkan nilai-nilai kedalam Array
+      Y[i]  := StrToFloat(InputY[i]);
+      X[i] := StrToFloat(InputX[i]);
+      Yo[i]  := Log10(Y[i]);
+      Xo[i] := Log10(X[i]);
+      XoYo[i] := Xo[i]*Yo[i];
+      Xo2[i] := Sqr(Xo[i]);
+
+      //Menampilkan nilai-nilai kedalam StringGrid
+      StringGrid1.Cells[0,i] := IntToStr(i+1);
+      StringGrid1.Cells[1,i] := FormatFloat(',0.####',Y[i]);
+      StringGrid1.Cells[2,i] := FormatFloat(',0.####',X[i]);
+      StringGrid1.Cells[3,i] := FormatFloat(',0.####',Yo[i]);
+      StringGrid1.Cells[4,i] := FormatFloat(',0.####',Xo[i]);
+      StringGrid1.Cells[5,i] := FormatFloat(',0.####',Xo2[i]);
+      StringGrid1.Cells[6,i] := FormatFloat(',0.####',XoYo[i]);
+    end;
+
+  //Menghitung Sigma-sigma
+  StringGrid1.Cells[0,N] := '∑ =';
+  SigmaY    := Sum(Y);
+  SigmaX    := Sum(X);
+  SigmaYo    := Sum(Yo);
+  SigmaXo    := Sum(Xo);
+  SigmaXo2    := Sum(Xo2);
+  SigmaXoYo   := Sum(XoYo);
+
+  //Menampilkan Sigma-sigma
+  StringGrid1.Cells[1,N] := FormatFloat(',0.##',SigmaY);
+  StringGrid1.Cells[2,N] := FormatFloat(',0.##',SigmaX);
+  StringGrid1.Cells[3,N] := FormatFloat(',0.##',SigmaYo);
+  StringGrid1.Cells[4,N] := FormatFloat(',0.##',SigmaXo);
+  StringGrid1.Cells[5,N] := FormatFloat(',0.##',SigmaXo2);
+  StringGrid1.Cells[6,N] := FormatFloat(',0.##',SigmaXoYo);
+
+  //Menghitung Regresi
+  b := ((N*SigmaXoYo)-(SigmaXo*SigmaYo))/((N*SigmaXo2)-Sqr(SigmaXo));
+  a := mean(Yo) - (b*mean(Xo));
+  a := Power(10,a);
+
+
+  LabelEquation.Text := 'Y = ' +  FloatToStr(RoundTo(a,-2)) +
+                               '*X^' + FloatToStr(RoundTo(b,-2));
+  ListBoxItem1.Text := 'a = ' + FormatFloat(',0.#####',a);
+  ListBoxItem2.Text := 'b = ' + FormatFloat(',0.#####',b);
+
+  //Grafik
+  for i := 0 to N-1 do
+  begin
+    Ycap[i] := a * Power(b,X[i]);
+
+    Chart1.Series[0].AddXY(X[i],Y[i]);
+    Chart1.Series[1].AddXY(X[i],Power(10,Ycap[i]));
+  end;
+
+  Panel1.Visible := False;
+  btnReset.Enabled  := True;
+  btnAnalyze.Enabled := False;
+  btnForecast.Enabled := True;
+end;
+
+end.

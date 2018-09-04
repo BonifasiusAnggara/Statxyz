@@ -1,0 +1,135 @@
+object fMain: TfMain
+  Left = 0
+  Top = 0
+  Caption = 'Statxyz'
+  ClientHeight = 480
+  ClientWidth = 640
+  StyleBook = DMStyle.StyleBookAquaGraphite
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnInfo: TButton
+      Align = Left
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'infotoolbutton'
+      TabOrder = 0
+      Text = 'btnInfo'
+      OnClick = btnInfoClick
+    end
+    object btnClose: TButton
+      Align = Right
+      Position.X = 592.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'stoptoolbutton'
+      TabOrder = 1
+      Text = 'Close'
+      OnClick = btnCloseClick
+    end
+    object Label1: TLabel
+      Align = Client
+      Size.Width = 544.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'fStat/Statxyz'
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 432.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 428.000000000000000000
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Size.Width = 636.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Statistika Inferensial dan Deskriptif'
+    end
+    object DistribusiFrekuensi: TListBoxItem
+      Position.Y = 30.000000000000000000
+      TabOrder = 0
+      Text = 'Distribusi Frekuensi'
+      OnClick = DistribusiFrekuensiClick
+    end
+    object RegresiLinearSederhana: TListBoxItem
+      Position.Y = 74.000000000000000000
+      TabOrder = 1
+      Text = 'Regresi Linear Sederhana'
+      OnClick = RegresiLinearSederhanaClick
+    end
+    object RegresiLinearBerganda: TListBoxItem
+      Position.Y = 118.000000000000000000
+      TabOrder = 2
+      Text = 'Regresi Linear Berganda'
+      OnClick = RegresiLinearBergandaClick
+    end
+    object RegresiLinear3: TListBoxItem
+      Position.Y = 162.000000000000000000
+      TabOrder = 3
+      Text = 'Regresi Linear 3 Variable X'
+      OnClick = RegresiLinear3Click
+    end
+    object TrendParabola: TListBoxItem
+      Position.Y = 206.000000000000000000
+      TabOrder = 7
+      Text = 'Trend Parabola'
+      OnClick = TrendParabolaClick
+    end
+    object TrendEksponensial: TListBoxItem
+      Position.Y = 250.000000000000000000
+      TabOrder = 8
+      Text = 'Trend Eksponensial'
+    end
+    object ListBoxGroupHeader2: TListBoxGroupHeader
+      Position.Y = 294.000000000000000000
+      Size.Width = 636.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Distribusi Probabilitas'
+    end
+    object DistribusiBinomial: TListBoxItem
+      Position.Y = 324.000000000000000000
+      TabOrder = 6
+      Text = 'Distribusi Binomial'
+      OnClick = DistribusiBinomialClick
+    end
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      'fStat adalah Aplikasi Statistika besutan Project Statxyz.'
+      'Diperuntukkan bagi mahasiswa yang sedang mempelajari statistika'
+      'tingkat dasar / pengantar statistika.'
+      'Silakan pilih menu yang tersedia untuk memulai perhitungan.')
+    ReadOnly = True
+    TextSettings.WordWrap = True
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 432.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Visible = False
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 428.000000000000000000
+  end
+end

@@ -186,7 +186,7 @@ object fRLB: TfRLB
           FileName = 'E:\Skripsi\Statxyz\database_table-512.png'
         end>
       IsSelected = True
-      Size.Width = 99.000000000000000000
+      Size.Width = 321.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'tabitemcustom'
@@ -297,8 +297,9 @@ object fRLB: TfRLB
               object ClearEditButton1: TClearEditButton
                 CanFocus = False
                 Cursor = crArrow
+                Position.Y = 4.000000000000000000
                 Size.Width = 32.000000000000000000
-                Size.Height = 40.000000000000000000
+                Size.Height = 30.000000000000000000
                 Size.PlatformDefault = False
                 TabOrder = 0
               end
@@ -327,8 +328,9 @@ object fRLB: TfRLB
               object ClearEditButton2: TClearEditButton
                 CanFocus = False
                 Cursor = crArrow
+                Position.Y = 4.000000000000000000
                 Size.Width = 32.000000000000000000
-                Size.Height = 40.000000000000000000
+                Size.Height = 30.000000000000000000
                 Size.PlatformDefault = False
                 TabOrder = 0
               end
@@ -357,8 +359,9 @@ object fRLB: TfRLB
               object ClearEditButton3: TClearEditButton
                 CanFocus = False
                 Cursor = crArrow
+                Position.Y = 4.000000000000000000
                 Size.Width = 32.000000000000000000
-                Size.Height = 40.000000000000000000
+                Size.Height = 30.000000000000000000
                 Size.PlatformDefault = False
                 TabOrder = 0
               end
@@ -747,7 +750,7 @@ object fRLB: TfRLB
           FileName = 'E:\Skripsi\Statxyz\note-2.png'
         end>
       IsSelected = False
-      Size.Width = 146.000000000000000000
+      Size.Width = 536.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'tabitemcustom'
@@ -786,8 +789,9 @@ object fRLB: TfRLB
           object ClearEditButton5: TClearEditButton
             CanFocus = False
             Cursor = crArrow
+            Position.Y = 6.000000000000000000
             Size.Width = 32.000000000000000000
-            Size.Height = 44.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
           end
@@ -813,8 +817,9 @@ object fRLB: TfRLB
           object ClearEditButton4: TClearEditButton
             CanFocus = False
             Cursor = crArrow
+            Position.Y = 6.000000000000000000
             Size.Width = 32.000000000000000000
-            Size.Height = 44.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
           end
@@ -4255,7 +4260,7 @@ object fRLB: TfRLB
             'velopment_increase-2-512.png'
         end>
       IsSelected = False
-      Size.Width = 113.000000000000000000
+      Size.Width = 395.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'tabitemcustom'
@@ -4332,7 +4337,7 @@ object fRLB: TfRLB
     Size.PlatformDefault = False
     TabOrder = 2
     Visible = False
-    Viewport.Width = 634.000000000000000000
-    Viewport.Height = 426.000000000000000000
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 428.000000000000000000
   end
 end

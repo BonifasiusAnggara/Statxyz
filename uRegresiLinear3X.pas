@@ -609,22 +609,11 @@ begin
 end;
 
 procedure TfRL3X.btnResetClick(Sender: TObject);
+var i : integer;
 begin
   //Menghapus TStringGrid
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
-  StringGrid1.Columns[0].DisposeOf;
+  for i := 0 to 14 do
+    StringGrid1.Columns[0].DisposeOf;
   StringGrid1.Columns[0].DisposeOf;
 
   //Menghapus ListBox

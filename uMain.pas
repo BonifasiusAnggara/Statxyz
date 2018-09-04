@@ -23,8 +23,6 @@ type
     ListBoxGroupHeader2: TListBoxGroupHeader;
     Memo1: TMemo;
     DistribusiBinomial: TListBoxItem;
-    DistribusiPoisson: TListBoxItem;
-    DistribusiBayes: TListBoxItem;
     TrendParabola: TListBoxItem;
     TrendEksponensial: TListBoxItem;
     procedure DistribusiBinomialClick(Sender: TObject);
@@ -34,6 +32,8 @@ type
     procedure RegresiLinearBergandaClick(Sender: TObject);
     procedure RegresiLinear3Click(Sender: TObject);
     procedure btnInfoClick(Sender: TObject);
+    procedure TrendParabolaClick(Sender: TObject);
+    procedure TrendEksponensialClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -50,7 +50,8 @@ implementation
 {$R *.LgXhdpiPh.fmx ANDROID}
 
 uses uDistribusiBinomial, uDistribusiFrekuensi, uRegresiLinearSederhana,
-  uRegresiLinearBerganda, uRegresiLinear3X, uDMStyle;
+  uRegresiLinearBerganda, uRegresiLinear3X, uDMStyle, uTrendParabola,
+  uTrendEksponensial;
 
 procedure TfMain.btnCloseClick(Sender: TObject);
 begin
@@ -107,6 +108,20 @@ begin
   if fRLS = nil then
     fRLS := TfRLS.Create(Application);
   fRLS.Show;
+end;
+
+procedure TfMain.TrendParabolaClick(Sender: TObject);
+begin
+  if fTPB = nil then
+    fTPB := TfTPB.Create(Application);
+  fTPB.Show;
+end;
+
+procedure TfMain.TrendEksponensialClick(Sender: TObject);
+begin
+  if fTEks = nil then
+    fTEks := TfTEks.Create(Application);
+  fTEks.Show;
 end;
 
 end.

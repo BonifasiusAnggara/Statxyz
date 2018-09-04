@@ -6,28 +6,34 @@
     <Transaction>2017/12/29 20:40:26.000.546,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\uMain.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2017/12/29 20:40:32.000.810,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Statxyz.dproj=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2017/12/29 20:41:19.000.908,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/12/29 20:43:35.000.413,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\uDistribusiBinomial.fmx=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
     <Transaction>2017/12/29 20:43:35.000.413,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\uDistribusiBinomial.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/12/29 20:43:35.000.413,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\uDistribusiBinomial.fmx=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
     <Transaction>2017/12/29 21:12:17.000.066,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
-    <Transaction>2017/12/29 21:12:43.000.681,D:\Skripsi\Statxyz\Unit1.pas=D:\Skripsi\Statxyz\uDistribusiFrekuensi.pas</Transaction>
     <Transaction>2017/12/29 21:12:43.000.681,D:\Skripsi\Statxyz\Unit1.fmx=D:\Skripsi\Statxyz\uDistribusiFrekuensi.fmx</Transaction>
+    <Transaction>2017/12/29 21:12:43.000.681,D:\Skripsi\Statxyz\Unit1.pas=D:\Skripsi\Statxyz\uDistribusiFrekuensi.pas</Transaction>
     <Transaction>2017/12/29 21:34:24.000.344,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
     <Transaction>2017/12/29 21:34:36.000.255,D:\Skripsi\Statxyz\Unit1.fmx=D:\Skripsi\Statxyz\uRegresiLinearBerganda.fmx</Transaction>
     <Transaction>2017/12/29 21:34:36.000.255,D:\Skripsi\Statxyz\Unit1.pas=D:\Skripsi\Statxyz\uRegresiLinearBerganda.pas</Transaction>
     <Transaction>2017/12/29 21:47:15.000.029,D:\Skripsi\Statxyz\uRegresiLinearBerganda.pas=</Transaction>
     <Transaction>2017/12/29 21:47:26.000.583,=D:\Skripsi\Statxyz\uRegresiLinearBerganda.pas</Transaction>
     <Transaction>2017/12/29 21:51:17.000.486,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
-    <Transaction>2017/12/29 21:52:13.000.014,D:\Skripsi\Statxyz\uRegresiLinearSederhana.fmx=D:\Skripsi\Statxyz\Unit1.fmx</Transaction>
     <Transaction>2017/12/29 21:52:13.000.014,D:\Skripsi\Statxyz\uRegresiLinearSederhana.pas=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
+    <Transaction>2017/12/29 21:52:13.000.014,D:\Skripsi\Statxyz\uRegresiLinearSederhana.fmx=D:\Skripsi\Statxyz\Unit1.fmx</Transaction>
     <Transaction>2017/12/29 22:21:26.000.845,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
     <Transaction>2017/12/29 22:21:41.000.230,D:\Skripsi\Statxyz\uRegresiLinearBerganda.fmx=D:\Skripsi\Statxyz\Unit1.fmx</Transaction>
     <Transaction>2017/12/29 22:21:41.000.230,D:\Skripsi\Statxyz\uRegresiLinearBerganda.pas=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
     <Transaction>2017/12/29 23:10:08.000.207,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
-    <Transaction>2017/12/29 23:10:26.000.220,D:\Skripsi\Statxyz\Unit1.pas=D:\Skripsi\Statxyz\uRegresiLinear3X.pas</Transaction>
     <Transaction>2017/12/29 23:10:26.000.220,D:\Skripsi\Statxyz\Unit1.fmx=D:\Skripsi\Statxyz\uRegresiLinear3X.fmx</Transaction>
+    <Transaction>2017/12/29 23:10:26.000.220,D:\Skripsi\Statxyz\Unit1.pas=D:\Skripsi\Statxyz\uRegresiLinear3X.pas</Transaction>
     <Transaction>2018/02/22 00:48:01.000.620,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
-    <Transaction>2018/02/22 00:48:08.000.746,D:\Skripsi\Statxyz\Unit1.dfm=D:\Skripsi\Statxyz\uDMStyle.dfm</Transaction>
     <Transaction>2018/02/22 00:48:08.000.746,D:\Skripsi\Statxyz\Unit1.pas=D:\Skripsi\Statxyz\uDMStyle.pas</Transaction>
+    <Transaction>2018/02/22 00:48:08.000.746,D:\Skripsi\Statxyz\Unit1.dfm=D:\Skripsi\Statxyz\uDMStyle.dfm</Transaction>
+    <Transaction>2018/07/08 21:54:49.000.686,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
+    <Transaction>2018/07/08 21:55:06.000.902,D:\Skripsi\Statxyz\Unit1.pas=D:\Skripsi\Statxyz\uTrendParabola.pas</Transaction>
+    <Transaction>2018/07/08 21:55:06.000.902,D:\Skripsi\Statxyz\Unit1.fmx=D:\Skripsi\Statxyz\uTrendParabola.fmx</Transaction>
+    <Transaction>2018/07/10 20:17:18.000.733,=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
+    <Transaction>2018/07/10 20:17:37.000.476,D:\Skripsi\Statxyz\uTrendEksponensial.pas=D:\Skripsi\Statxyz\Unit1.pas</Transaction>
+    <Transaction>2018/07/10 20:17:37.000.476,D:\Skripsi\Statxyz\uTrendEksponensial.fmx=D:\Skripsi\Statxyz\Unit1.fmx</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile iOSSimulator="iPhone5" Android="OZLNHU4T9PDACECE"/>
@@ -54,5 +60,9 @@
     <File Path="uRegresiLinearSederhana.fmx"/>
     <File Path="uDMStyle.pas"/>
     <File Path="uDMStyle.dfm"/>
+    <File Path="uTrendParabola.pas"/>
+    <File Path="uTrendParabola.fmx"/>
+    <File Path="uTrendEksponensial.pas"/>
+    <File Path="uTrendEksponensial.fmx"/>
   </ProjectSortOrder>
 </BorlandProject>

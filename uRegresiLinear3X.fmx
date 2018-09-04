@@ -186,7 +186,7 @@ object fRL3X: TfRL3X
           FileName = 'E:\Skripsi\Statxyz\database_table-512.png'
         end>
       IsSelected = True
-      Size.Width = 99.000000000000000000
+      Size.Width = 210.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'tabitemcustom'
@@ -297,8 +297,9 @@ object fRL3X: TfRL3X
               object ClearEditButton1: TClearEditButton
                 CanFocus = False
                 Cursor = crArrow
+                Position.Y = 4.000000000000000000
                 Size.Width = 32.000000000000000000
-                Size.Height = 40.000000000000000000
+                Size.Height = 30.000000000000000000
                 Size.PlatformDefault = False
                 TabOrder = 0
               end
@@ -327,8 +328,9 @@ object fRL3X: TfRL3X
               object ClearEditButton2: TClearEditButton
                 CanFocus = False
                 Cursor = crArrow
+                Position.Y = 4.000000000000000000
                 Size.Width = 32.000000000000000000
-                Size.Height = 40.000000000000000000
+                Size.Height = 30.000000000000000000
                 Size.PlatformDefault = False
                 TabOrder = 0
               end
@@ -357,8 +359,9 @@ object fRL3X: TfRL3X
               object ClearEditButton3: TClearEditButton
                 CanFocus = False
                 Cursor = crArrow
+                Position.Y = 4.000000000000000000
                 Size.Width = 32.000000000000000000
-                Size.Height = 40.000000000000000000
+                Size.Height = 30.000000000000000000
                 Size.PlatformDefault = False
                 TabOrder = 0
               end
@@ -387,8 +390,9 @@ object fRL3X: TfRL3X
               object ClearEditButton6: TClearEditButton
                 CanFocus = False
                 Cursor = crArrow
+                Position.Y = 4.000000000000000000
                 Size.Width = 32.000000000000000000
-                Size.Height = 40.000000000000000000
+                Size.Height = 30.000000000000000000
                 Size.PlatformDefault = False
                 TabOrder = 0
               end
@@ -777,7 +781,7 @@ object fRL3X: TfRL3X
           FileName = 'E:\Skripsi\Statxyz\note-2.png'
         end>
       IsSelected = False
-      Size.Width = 146.000000000000000000
+      Size.Width = 341.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'tabitemcustom'
@@ -816,8 +820,9 @@ object fRL3X: TfRL3X
           object ClearEditButton5: TClearEditButton
             CanFocus = False
             Cursor = crArrow
+            Position.Y = 6.000000000000000000
             Size.Width = 32.000000000000000000
-            Size.Height = 44.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
           end
@@ -843,8 +848,9 @@ object fRL3X: TfRL3X
           object ClearEditButton4: TClearEditButton
             CanFocus = False
             Cursor = crArrow
+            Position.Y = 6.000000000000000000
             Size.Width = 32.000000000000000000
-            Size.Height = 44.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
           end
@@ -884,8 +890,9 @@ object fRL3X: TfRL3X
           object ClearEditButton7: TClearEditButton
             CanFocus = False
             Cursor = crArrow
+            Position.Y = 6.000000000000000000
             Size.Width = 32.000000000000000000
-            Size.Height = 44.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
           end
@@ -4358,7 +4365,7 @@ object fRL3X: TfRL3X
             'velopment_increase-2-512.png'
         end>
       IsSelected = False
-      Size.Width = 113.000000000000000000
+      Size.Width = 254.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'tabitemcustom'
@@ -4449,7 +4456,7 @@ object fRL3X: TfRL3X
     Size.PlatformDefault = False
     TabOrder = 2
     Visible = False
-    Viewport.Width = 634.000000000000000000
-    Viewport.Height = 426.000000000000000000
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 428.000000000000000000
   end
 end
